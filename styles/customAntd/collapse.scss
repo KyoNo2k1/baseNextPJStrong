@@ -1,0 +1,45 @@
+.flight-card-collapse {
+  .ant-collapse-header {
+    display: flex;
+    align-items: center;
+
+    flex-flow: row-reverse nowrap;
+    width: fit-content;
+    gap: 6px;
+
+    &-text {
+      color: var(--info-500, #0979f9);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+
+  .ant-collapse-content {
+    .ant-collapse-content-box {
+      padding: 8px 0;
+
+      .collapse-booking-detail {
+        border: unset !important;
+
+        .ant-timeline-item {
+          padding-bottom: 16px;
+
+          .ant-timeline-item-tail {
+            border-inline-start: 1px solid #cdd6dd;
+          }
+
+          .ant-timeline-item-head {
+            padding: 0;
+          }
+
+          .ant-timeline-item-content {
+            margin: 0;
+            margin-top: -5px;
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

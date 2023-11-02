@@ -1,0 +1,19 @@
+.colspanPriceSummary{
+    .ant-collapse-header{
+        background-color: #CCE4E1;
+        padding: 8px 20px;
+    }
+    .ant-collapse-content-box{
+        background: #ffffff;
+        padding: 0 !important;
+    }
+}
+.collapse-form-passager{
+    .ant-collapse-header, .ant-collapse-content-box{
+        padding: 0 !important;
+    }
+    .ant-collapse-expand-icon{
+        margin-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "fe-vna-pss.fullname" . }}-test-connection"
+  labels:
+    {{- include "fe-vna-pss.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "fe-vna-pss.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

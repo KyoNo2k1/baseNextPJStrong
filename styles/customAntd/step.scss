@@ -1,0 +1,32 @@
+.flight-card-content {
+    .custom-step {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+
+            background: #cdd6dd;
+
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        .step {
+            position: relative;
+            z-index: 1;
+
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            border: 1px solid #0d7596;
+            background: #0d7596;
+        }
+
+        .first-step {
+            background: unset;
+        }
+    }
+}

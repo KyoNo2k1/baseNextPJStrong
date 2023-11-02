@@ -1,0 +1,24 @@
+.form-booking {
+  .ant-form-item-label {
+    label {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #535e71;
+    }
+  }
+}
+.formHiddenCheckbox {
+  .ant-checkbox {
+    display: none;
+  }
+  span {
+    padding: 0;
+  }
+}
+.errorDateOfBirth {
+  .ant-form-item-control-input {
+    height: 83px;
+  }
+}
+
